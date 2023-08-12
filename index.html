@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>AI Product Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>AI Product Dashboard</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#metrics">Metrics</a></li>
+            <li><a href="#visualization">Visualization</a></li>
+            <li><a href="#control">Control</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>Welcome to the AI Product Dashboard! This dashboard provides insights and control over the AI model's performance and functionality. You can use the navigation links above to explore different sections of the dashboard.</p>
+            <p>The AI model integrated into this dashboard is designed to provide predictions for various scenarios. The dashboard offers a range of performance metrics to help you evaluate the model's accuracy and effectiveness.</p>
+            <p>With the interactive data visualization components, you can visually analyze the AI model's predictions alongside the actual results, gaining valuable insights into its performance over time.</p>
+            <p>Feel free to configure the model's behavior using the control elements provided in the dashboard. Adjust the threshold values, start or stop the model, and fine-tune its performance to suit your needs.</p>
+            <p>As you explore the different sections, remember that this dashboard is designed to offer a seamless user experience, from intuitive navigation to clear labeling and visually appealing designs.</p>
+        </section>
+        
+        
+        <section id="metrics">
+            <h2>Performance Metrics</h2>
+            <div class="metric-card">
+                <h3>Accuracy</h3>
+                <div class="metric-value">87%</div>
+            </div>
+            <div class="metric-card">
+                <h3>Precision</h3>
+                <div class="metric-value">78%</div>
+            </div>
+            <div class="metric-card">
+                <h3>Recall</h3>
+                <div class="metric-value">65%</div>
+            </div>
+            <div class="metric-card">
+                <h3>F1 Score</h3>
+                <div class="metric-value">82%</div>
+            </div>
+            <div class="metric-card">
+                <h3>ROC AUC</h3>
+                <div class="metric-value">0.91</div>
+            </div>
+            <div class="metric-card">
+                <h3>Mean Squared Error</h3>
+                <div class="metric-value">0.12</div>
+            </div>
+            <div class="metric-card">
+                <h3>R-squared</h3>
+                <div class="metric-value">0.78</div>
+            </div>
+            <div class="metric-card">
+                <h3>Mean Absolute Error</h3>
+                <div class="metric-value">0.25</div>
+            </div>
+            <!-- Add more metric cards as needed -->
+        </section>
+        
+        <section id="visualization">
+            <h2>Data Visualization</h2>
+            <div id="chart-container">
+                <canvas id="prediction-chart"></canvas>
+            </div>
+        </section>
+        
+        <section id="control">
+            <h2>Model Control</h2>
+            <div class="control-group">
+                <h3>Start / Stop</h3>
+                <button id="start-button">Start</button>
+                <button id="stop-button">Stop</button>
+            </div>
+            <div class="control-group">
+                <h3>Configuration</h3>
+                <label for="config-slider">Threshold: <span id="config-value">50%</span></label>
+                <input type="range" id="config-slider" min="0" max="100" step="1">
+            </div>
+        </section>
+    </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 AI Product Dashboard</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
